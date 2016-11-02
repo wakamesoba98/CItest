@@ -3,3 +3,11 @@ lein: lein2
 jdk:
   - oraclejdk8
 script: lein2 test
+
+notifications:
+  webhooks:
+    urls:
+        - https://www.wakamesoba98.net/post
+    on_success: always
+    on_failure: never
+    on_start: never
