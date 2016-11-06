@@ -5,4 +5,4 @@ jdk:
 script: lein2 test
 
 after_success:
-  "curl -X POST https://www.wakamesoba98.net/post"
+  "curl -X POST $POST_URL"
