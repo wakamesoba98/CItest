@@ -5,4 +5,4 @@ jdk:
 script: lein2 test
 
 after_success:
-  "curl -X POST $POST_URL"
+  "curl -H 'Content-Type:application/json' -d \"$POST_BODY\" $POST_URL >/dev/null 2>&1"
